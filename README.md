@@ -8,8 +8,10 @@ Features for [Charades-STA](https://github.com/JonghwanMun/LGI4temporalgrounding
 
 ### Train
 ```bash
-# [dataset]: charades, activitynet
-python train.py --config-path config/[dataset]/main.json --log_dir LOG_DIR --tag TAG
+# Charades-STA
+python train.py --config-path config/charades/main.json --log_dir LOG_DIR --tag TAG --vote
+# ActivityNet Captions
+python train.py --config-path config/activitynet/main.json --log_dir LOG_DIR --tag TAG
 ```
 ### Inference
 ```bash
